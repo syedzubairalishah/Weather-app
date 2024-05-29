@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
+</head>
+<body>
+    
+    <div class="first">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+
+    <div class="main">
+    <h1>WEATHER APP</h1>
+    <form id="myform">
+        <input type="text" id="inputdata" placeholder="Enter city name">
+        <button type="submit" id="button">SUBMIT</button>
+    </form>
+    </div>
+
+    <div class="sub">
+        <p id="temp" class="sub-para"></p>
+        <p id="humidity" class="sub-para"></p>
+        <p id="degree" class="sub-para"></p>
+        <p id="speed" class="sub-para"></p>
+        <p id="pressure" class="sub-para"></p>
+        <!-- <p id="feelslike" class="sub-para"></p> -->
+        <p id="message" class="message"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
